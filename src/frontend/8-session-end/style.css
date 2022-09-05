@@ -1,0 +1,235 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@supports (font-variation-settings: normal) {
+
+	html { 
+		font-family: 'Inter var', sans-serif; 
+	}
+
+}
+
+:root {
+
+    font-size: 45%;
+    --primary: #FD5381;
+	--secondary: #43B994;
+	--tertiary: #261B2D;
+	--highlighted: #FFCF14;
+	--correct: #7FD970;
+	--incorrect: #FF7373;
+	--bg-1: #EBEBEB;
+	--bg-2: #DFDFDF;
+	--bg-3: #A6A6A6;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+    animation-name: appear;
+    animation-duration: 1.5s;
+
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--bg-1);
+
+}
+
+.meia-lua {
+
+	position: absolute;
+	left: 50%;
+}
+
+.cruz-diagonal {
+
+	position: absolute;
+	width: 20rem;
+	left: 40%;
+	top: 5%;
+
+}
+
+.cruz-horizontal {
+
+	position: absolute;
+	right: 5%;
+	top: 5%;
+
+}
+
+.fita-baixo {
+
+	position: absolute;
+	bottom: 5%;
+	left: 45%;
+}
+
+.fita-baixo-esquerda {
+
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+}
+
+.fita-alto-direita {
+
+	position: absolute;
+	top: 40%;
+	right: 2%;
+}
+
+.left {
+
+	width: 50%;
+	background-image: url("../assets/img/session_end/world.png");
+	background-size: cover;
+
+
+}
+
+.right {
+
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.right .title {
+
+	font-size: 6.4rem;
+	font-weight: 700;
+	margin-bottom: 4rem;
+
+}
+
+.row {
+
+	display: flex;
+	align-items: center;
+	margin-bottom: 3rem;
+
+}
+
+.medalha {
+
+	width: 10rem;
+	margin-right: 3rem;
+}
+
+
+.player {
+
+	display: flex;
+	justify-content: center;
+	margin-right: 3.5rem;
+
+}
+
+.player > img {
+
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+
+}
+
+.player .info {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.player .info .name {
+
+	font-size: 3.2rem;
+	font-weight: 700;
+
+}
+
+.player .info .score {
+
+	font-size: 3.2rem;
+	font-weight: 500;
+	color: var(--bg-3);
+
+}
+
+.row.winner .player .info .score {
+
+	color: var(--correct);
+
+}
+
+.row .earned-coins {
+
+	font-size: 3.2rem;
+	font-weight: 500;
+	color: var(--bg-3)
+}
+
+.row.winner .earned-coins {
+
+	color: var(--highlighted);
+
+}
+
+.controls {
+
+	display: flex;
+
+}
+
+.controls .back-to-lobby {
+
+	width: 17rem;
+	height: 12rem;
+	background-color: var(--bg-3);
+	border-radius: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+	margin-right: 1rem;
+
+}
+
+.controls .go-to-life-project {
+
+	width: 30rem;
+	height: 12rem;
+	background-color: var(--primary);
+	border-radius: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+	margin-right: 1rem;
+	padding: 0rem 2rem;
+	
+}

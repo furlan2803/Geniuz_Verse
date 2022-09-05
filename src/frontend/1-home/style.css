@@ -1,0 +1,64 @@
+:root {
+    font-size: 50.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    background-image: url(../assets/img/home.png);
+    background-size: 100vw 100vh;
+}
+
+.Image-name img {
+    position: absolute;
+    top: 10%;
+    left: 56%;
+    width: 35%;
+}
+
+.Image-profiles{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.Image-profiles span{
+    margin-top: 20px;
+}
+
+.Image-profiles img{
+    width: 45%;
+}
+
+.Image-button{
+    position: absolute;
+    top: 70%;
+    left: 67%;
+    background: transparent;
+    border: none;
+}
+
+.Image-button img{
+    width: 20rem;
+}
+
+.Image-button:active {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px #FFFFFF;
+    transform: translateY(4px);
+    border-radius: 4rem;
+}

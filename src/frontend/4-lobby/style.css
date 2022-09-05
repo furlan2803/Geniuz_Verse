@@ -1,0 +1,695 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@supports (font-variation-settings: normal) {
+
+	html { 
+		font-family: 'Inter var', sans-serif; 
+	}
+
+}
+
+:root {
+
+    font-size: 45%;
+    --primary: #FD5381;
+	--secondary: #43B994;
+	--tertiary: #261B2D;
+	--highlighted: #FFCF14;
+	--correct: #7FD970;
+	--incorrect: #FF7373;
+	--bg-1: #EBEBEB;
+	--bg-2: #DFDFDF;
+	--bg-3: #A6A6A6;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+    animation-name: appear;
+    animation-duration: 1.5s;
+
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+	position: relative;
+
+}
+
+.container {
+
+	width: 100%;
+	height: 100%;
+	padding: 0rem 13rem 0rem 13rem;
+	background-color: var(--tertiary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.session-info {
+
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.session-info > * {
+
+	margin-bottom: 3rem;
+
+}
+
+.user {
+	
+	display: flex;
+	
+}
+
+.user img {
+
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	margin-right: 3rem;
+
+}
+
+.user .data {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.user .data .name {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: white;
+
+}
+
+.user .data .wallet {
+
+	font-weight: 500;
+	font-size: 3.2rem;
+	color: var(--highlighted);
+
+}
+
+.victories {
+
+	display: flex;
+	align-items: center;
+
+}
+
+.victories img {
+
+	width: 11rem;
+	margin-right: 3rem;
+
+}
+
+.victories span {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: white;
+
+}
+
+.start {
+
+	margin-top: 4rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	border-radius: 3rem;
+	height: 8rem;
+	position: relative;
+
+
+}
+
+#art {
+	
+	width: 20rem;
+	position: absolute;
+	right: -10rem;
+	bottom: -20rem;
+
+}
+
+.start span {
+
+	font-weight: 700;
+	font-size: 2.4rem;
+	color: white;
+
+}
+
+.middle {
+	position: relative;
+	width: 50%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#clock {
+
+	width: 20rem;
+	position: absolute;
+	top: -5rem;
+	left: -12rem;
+
+}
+
+.server-status {
+
+	display: flex;
+	margin-bottom: 6rem;
+
+}
+
+.server-status .now {
+
+	width: 3.2rem;
+	height: 3.2rem;
+	margin-right: 2rem;
+	background-color: var(--correct);
+	border-radius: 50%;
+
+}
+
+.server-status span {
+
+	font-size: 3.2rem;
+	font-weight: 500;
+	color: var(--correct);
+
+}
+
+.chat {
+
+	width: 100%;
+	height: 85%;
+	padding: 5rem;
+	background-color: white;
+	border-radius: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.messages {
+
+	min-height: 45rem;
+	max-height: 60rem;
+	margin-bottom: 5rem;
+    overflow-y: auto;
+}
+
+.messages > .msg {
+
+	margin-bottom: 2rem;
+
+}
+
+.messages > .msg:last-child {
+
+	margin-bottom: 0rem;
+
+}
+
+.msg {
+
+	display: flex;
+
+}
+
+.msg img {
+
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	margin-right: 3rem;
+
+}
+
+.msg .data {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.msg .data .name {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: #000;
+
+}
+
+.msg .data .content {
+
+	font-weight: 300;
+	font-size: 3.2rem;
+	color: #000;
+
+}
+
+.message-input {
+
+	color: black;
+	width: 100%;
+	height: 9.4rem;
+	font-weight: 300;
+	font-size: 3.2rem;
+	border-radius: 3rem;
+	padding: 0rem 3rem 0rem 3rem;
+	background-color: var(--bg-1);
+
+}
+
+.new {
+
+	position: relative;
+
+}
+
+.new img {
+
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+
+}
+
+.raffle {
+
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box-title {
+
+	color: white;
+	font-weight: 900;
+	font-size: 3.2rem;
+
+}
+
+.stats {
+
+	position: relative;
+	margin-bottom: 8rem;
+
+}
+
+#pencil {
+
+
+	width: 13rem;
+	position: absolute;
+	right: -15rem;
+	top: 10rem;
+
+}
+
+.number-box {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+
+}
+
+.number-box .value {
+
+	font-weight: 700;
+	font-size: 6.4rem;
+	color: white;
+
+}
+
+.number-box .description {
+
+	font-weight: 300;
+	font-size: 2.4rem;
+	color: white;
+
+}
+
+.controls {
+
+	width: 100%;
+
+}
+
+.controls .buy-tickets {
+
+	width: 100%;
+	height: 8rem;
+	background-color: var(--secondary);
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	cursor: pointer;
+
+}
+
+.controls .buy-tickets span {
+
+	color: white;
+	font-weight: 700;
+	font-size: 3.2rem;
+
+}
+
+.controls .gift {
+
+	width: 100%;
+	height: 8rem;
+	background-color: var(--highlighted);
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	cursor: pointer;
+
+}
+
+.controls .gift span {
+
+	color: white;
+	font-weight: 700;
+	font-size: 3.2rem;
+	
+}
+
+.ticket-shop {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.bg-filter {
+
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #261B2D;
+	opacity: 0.8;
+
+}
+
+.ticket-shop .content {
+
+	z-index: 2;
+	width: 45%;
+	height: 75%;
+	padding: 5rem;
+	background-color: white;
+	border-radius: 6rem;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+
+}
+
+.ticket-shop .content {
+
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.content .title {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+}
+
+.content .description {
+
+	font-weight: 300;
+	font-size: 3.2rem;
+	text-align: center;
+	margin-bottom: 4rem;
+
+}
+
+.content .wallet-info {
+
+	font-weight: 400;
+	font-size: 3.2rem;
+	margin-bottom: 4rem;
+
+}
+
+.content .wallet-info .highlighted {
+
+	font-weight: 500;
+	color: var(--primary);
+
+}
+
+.ticket-control {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.ticket-control .main {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.main .remove {
+
+	width: 7rem;
+	height: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	border-radius: 2rem;
+	font-size: 3.6rem;
+	font-weight: 900;
+	color: white;
+	margin-right: 3rem;
+	cursor: pointer;
+
+}
+
+.main .current-quantity {
+
+	width: 15rem;
+	height: 15rem;
+	background-color: var(--bg-1);
+	border-radius: 3rem;
+	color: var(--bg-3);
+	font-size: 9.6rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 3rem;
+}
+
+.main .add {
+
+	cursor: pointer;
+	width: 7rem;
+	height: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary);
+	border-radius: 2rem;
+	font-size: 3.6rem;
+	font-weight: 900;
+	color: white;
+
+}
+
+.ticket-control span {
+
+	margin-top: 1.6rem;
+	font-weight: 300;
+	font-size: 3.2rem;
+
+}
+
+.buy-btn {
+
+	width: 100%;
+	height: 8rem;
+	background-color: var(--secondary);
+	border-radius: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 3.5rem 0rem 3.5rem;
+
+}
+
+.buy-btn .label {
+
+	font-weight: 400;
+	font-size: 3.2rem;
+	color: white;
+
+}
+
+.buy-btn .cost {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: white;
+}
+
+.sponsor-section {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sponsor-section.visble {
+
+	display: flex;
+	
+}
+
+.sponsor-section .content {
+
+	z-index: 2;
+	width: 45%;
+	height: 75%;
+	padding: 5rem;
+	background-color: white;
+	border-radius: 6rem;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+
+}
+
+.sponsor-section .content {
+
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.content .title {
+
+	font-weight: 700;
+	font-size: 3.2rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+}
+
+.content .description {
+
+	font-weight: 300;
+	font-size: 3.2rem;
+	text-align: center;
+	margin-bottom: 4rem;
+
+}
+
+.content .sponsor-image {
+
+	width: 20rem;
+
+}
+
+.sponsor {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 7.5rem;
+
+}
+
+.gift {
+
+	margin-bottom: 7.5rem;
+}
+
+.close-btn {
+	
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 3.2rem;
+	font-weight: 400;
+	width: 100%;
+	height: 8rem;
+	background-color: var(--primary);
+	border-radius: 2rem;
+
+}

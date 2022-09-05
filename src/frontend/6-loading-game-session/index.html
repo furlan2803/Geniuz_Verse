@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lobby</title>
+</head>
+<body>
+
+    <div class="align-coluns">
+        <!-- Definição do desafio proposto e apresentação dos players online -->
+        <div class="players">
+            <div class="progress-bar">
+                <div class="current-progress"></div>
+            </div>
+            <div class="title">
+                <div class="title-challenge">
+                    <span>Desafio: guess the answer</span>
+                    <div class="help-btn" id="help-btn">
+						<span class="icon">?</span>
+						<div class="info" id="info-text">Digite a resposta e ganhe pontos. O vencedor leva moedas.</div>
+					</div>
+                </div>
+                <span>Bioma e vegetação 🌿</span>
+            </div>
+            <div class="Players-online">
+                <div class="align">
+                    <img src="../assets/img/avatar1.svg">
+                    <span>Jogador #1</span>
+                </div>
+                <div class="align">
+                    <img src="../assets/img/avatar9.svg">
+                    <span>Você</span>
+                </div>
+                <div class="align">
+                    <img src="../assets/img/icon question.svg">
+                    <span>Aguardando...</span>
+                </div>
+                <div class="align">
+                    <img src="../assets/img/icon question.svg">
+                    <span>Aguardando...</span>
+                </div>
+            </div>
+            <div class="loading">
+                <img class="loading-players" src="../assets/icon/icon-loading.svg">
+            </div>
+        </div>
+
+        <!-- Imagem referente ao conteúdo tratado no momento -->
+        <div class="image-robo">
+            <div>
+                <img src="../assets/img/robotic-plant.svg">
+            </div>
+        </div>
+
+        <!-- Interação dos usuários no chat enquanto a sessão não começa -->
+        <div class="chat-players">
+            <div class="align-chat">
+                <div>
+                    <img src="../assets/img/avatar1.svg">
+                </div>
+                <div class="align-text">
+                    <div class="align-text-chat">
+                        <span><b>Jogador #1</b></span>
+                    </div>
+                    <div>
+                        <span>Eaí, tudo bem? Ansiosa para o desafio de hoje?</span>
+                    </div>
+                </div>
+            </div>
+            <div class="align-chat">
+                <div>
+                    <img src="../assets/img/avatar9.svg">
+                </div>
+                <div class="align-text">
+                    <div class="align-text-chat">  
+                        <span><b>Você</b></span>
+                    </div>
+                    <div>  
+                        <span>Sim, demais! E você?</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-chat">
+                <div>
+                    <span>Digite aqui...</span>
+                </div>
+                <div class="align-chat-new">
+                    <img src="../assets/icon/icon-arrow.svg">
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

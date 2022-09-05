@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Geniuz Verse | Lobby</title>
+	<link rel="stylesheet" href="./style.css"/>
+</head>
+<body onload="changeItem()">
+
+	<!-- Visualização das moedas acumuladas, avatar selecionado e quantas sessões foram ganhas. -->
+	<div class="container">
+
+		<div class="session-info">
+			<div class="center">
+				<div class="user">
+					<img id="img" src="../assets/img/kahlo.png" alt="um boneco tridimensional representando um usuário">
+					<div class="data">
+						<span class="name">Você</span>
+						<span class="wallet"> <span id="coins-value">207</span> moedas</span>
+					</div>
+				</div>
+				<div class="victories">
+					<img src="../assets/img/medalha.png" alt="medalha de ouro com estrela amarela e laço azul">
+					<span class=""><span id="victories-value">23</span> vitórias</span>
+				</div>
+				<a href="../5-0-sorting-step-one/index.html">
+				<div class="start">
+					<span>Iniciar nova sessão</span></a>
+					<img id="art" src="../assets/img/art.png" alt="pincel e godê com aquarelas coloridas">
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<!-- Chat interativo entre alunos para tirar dúvidas -->
+		<div class="middle">
+
+			<img id="clock" src="../assets/img/clock.svg" alt="ilustração de um relógio vermelho em estio de arte 3D">
+
+			<div class="server-status">
+				<div class="now"></div>
+				<span>servidor conectado</span>
+
+			</div>
+
+			<div class="chat">
+				<div class="messages" id="messages">
+				</div>
+				<div class="new">
+					<input class="message-input" type="text" name="message-input" id="message-input" placeholder="Digite aqui...">
+					<img src="../assets/img/send-message.svg" alt="ícone representando um avião com estilo de design minimalista que ao ser clicado, envia uma nova mensagem ao chat global">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Sorteio mensal das empresas para visita, quantos tickets foram comprados para comcorrer ao sorteio e quantos tickets ao total já fora comprados por outros estudante -->
+		<div class="raffle">
+
+			<span class="box-title">Sorteio mensal</span>
+
+			<div class="stats">
+
+				<img id="pencil" src="../assets/img/pencil.png" alt="lápis de ponta preta, corpo amarelo e borracha branca">
+
+				<div class="number-box">
+					<span class="value">5</span>
+					<span class="description">seus tickets</span>
+				</div>
+	
+				<div class="number-box">
+					<span class="value">29400</span>
+					<span class="description">tickets vendidos</span>
+				</div>
+			</div>
+
+			<!-- Possibilidade de compras de mais tickets para o sorteio e quantas visitas foram ganhas -->
+			<div class="controls">
+
+				<div class="buy-tickets" id="buy-tickets-btn">
+					<span>Comprar tickets</span>
+				</div>
+
+				<div class="gift" id="see-gift-btn">
+					<span>Premiação</span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Explicação da compra de tickets, qual é o saldo do usuário, quantos ele deseja comprar e quantas moedas ele possui. -->
+	<div class="ticket-shop" id="ticket-shop">
+		
+		<div class="bg-filter" id="ticket-shop-bg-filter"></div>
+
+		<div class="content">
+
+			<span class="title">Loja de tickets</span>
+
+			<span class="description">A cada mês sorteamos prêmios incríveis para nossos alunos. Para participar, basta comprar os bilhetes abaixo :)</span>
+
+			<span class="wallet-info">Seu saldo: <span class="highlighted"><span class="value">207</span> moedas</span></span>
+
+			<div class="ticket-control">
+				<div class="main">
+					<div class="remove" id="removeOne">-</div>
+					<div class="current-quantity" id="tickets-quantity" value="1">1</div>
+					<div class="add" id="addOne">+</div>
+				</div>
+				<span>tickets</span>
+			</div>
+
+			<!-- Validação da compra de ticket e quantas moedas foram gastas -->
+			<div class="buy-btn">
+
+				<span class="label">Comprar tickets</span>
+
+				<span class="cost"> <span class="value" id="buy-ticket-price" value="5">5</span> moedas </span>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Apresentação do patrocinador do mês e qual premiação será atribuida ao aluno que for sorteado -->
+	<div class="sponsor-section" id="sponsor-section">
+
+		<div class="bg-filter" id="sponsor-bg-filter"></div>
+
+		<div class="content">
+
+			<div class="sponsor">
+				<div class="title">Patrocinador</div>
+				<div class="description">O patrocinador do mês é...</div>
+				<img class="sponsor-image" src="../assets/img/sponsor.png" alt="logotipo do sebrae">
+			</div>
+
+			<div class="gift">
+				<div class="title">Premiação</div>
+				<div class="description">Tour completo em uma unidade do Sebrae no Rio de Janeiro + uma consultoria de marketing pessoal.</div>
+			</div>
+
+			<div class="close-btn" id="sponsor-section-close-btn">
+				Fechar
+			</div>
+
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

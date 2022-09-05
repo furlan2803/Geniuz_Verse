@@ -1,0 +1,117 @@
+:root {
+    font-size: 50.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #EBEBEB;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.choose_topic{
+
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+
+}
+
+.test-knowledge{
+
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+
+}
+
+.topic-sorting{
+
+    margin-bottom: 4rem;
+    font-size: 2.2rem;
+
+
+}
+
+.join{
+
+    width: 37rem;
+    padding: 2.5rem;
+    border-radius: 3.5rem;
+    font-size: 2.2rem;
+    background-color: #FD5381;
+    border: none;
+    color: #EBEBEB;
+
+}
+
+.polygon img{
+    width: 35%;
+    left: 30%;
+    position: relative;
+    z-index: 10;
+}
+
+.icon-geo img{
+
+    position: absolute;
+    opacity: 0;
+    top: 20%;
+    left: 55%;
+    width: 13%;
+  
+}
+.icon-geo img.selected{
+    position: absolute;
+    opacity: 1;
+    top: 20%;
+    left: 60%;
+    width: 13%;
+
+
+}
+
+.content {
+
+    width: 35%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+}
+#carrosel {
+    width: 200px;
+       height: 50px;
+       max-height: 20px;
+       position: absolute;
+}
+#carrosel img{
+    opacity: 0;
+    padding-top: 60%;
+    position: absolute;
+    width: 60%;
+    object-fit: cover;
+}
+#carrosel img.selected{
+    opacity: 1;
+    padding-top: 50%;
+
+} 
+#carrosel img.noSelected {
+    opacity: 0;
+    padding-top:50%;
+}
+
+
+
+

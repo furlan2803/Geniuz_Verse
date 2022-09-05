@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Geniuz Verse | Sessão interativa</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	
+	<div class="game">
+
+		<div class="container">
+
+			<div class="header">
+				<div class="game-subject">Bioma e vegetação</div>
+				<div class="remaining-time-in-minutes" id="remaining-time-in-minutes">03:00</div>
+			</div>
+
+			<div class="infos">
+				<div class="tip-time-warning">
+					<img src="../assets/img/relogio.svg" alt="relógio vermelho">
+					<span>Próxima dica em <span id="time-to-next-tip">27</span>s</span>
+				</div>
+				<div class="tip">
+					<img src="../assets/img/lampada.svg" alt="lâmpada amarela">
+					<span>A vegetação deste bioma é marcada por gramíneas.</span>
+				</div>
+			</div>
+
+
+			<div class="chat">
+				<div class="messages">
+					<div class="msg">
+						<img src="../assets/img/green-guy.png" alt="">
+						<div class="data">
+							<span class="name">Usuário 13</span>
+							<span class="content">Cerrado? Não tenho certeza...</span>
+						</div>
+					</div>
+					<div class="msg">
+						<img src="../assets/img/kahlo.png" alt="">
+						<div class="data">
+							<span class="name">Você</span>
+							<span class="content correct">Resposta correta</span>
+						</div>
+					</div>
+				</div>
+				<div class="send">
+					<input class="message-input" type="text" name="message-input" id="message-input" placeholder="Digite aqui...">
+					<img src="../assets/img/send-message.svg" alt="ícone representando um avião com estilo de design minimalista que ao ser clicado, envia uma nova mensagem ao chat global">
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="time-bar">
+			<div class="remaining"></div>
+		</div>
+
+	</div>
+
+	<div class="img"></div>
+
+	<script src="./script.js"></script>
+</body>
+</html>
